@@ -125,7 +125,7 @@ function DrawImageToCanvas() {
     }
     else if (typeInput.value == 1) { // bytes - alpha
 
-        fileSize.innerHTML = "Showing <b>" + Math.min((widthInput.value * heightInput.value), (fileByteArray.length)) + "</b> of <b>" + (fileByteArray.length) + "</b> bytes <b>(" + ((Math.min((widthInput.value * heightInput.value), (fileByteArray.length)) / fileByteArray.length) * 100).toFixed(2) + "%)</b>";
+        fileSize.innerHTML = "Showing <b>" + NumberWithCommas(Math.min((widthInput.value * heightInput.value), (fileByteArray.length))) + "</b> of <b>" + (fileByteArray.length) + "</b> bytes <b>(" + NumberWithCommas(((Math.min((widthInput.value * heightInput.value), (fileByteArray.length)) / fileByteArray.length) * 100).toFixed(2)) + "%)</b>";
 
         for (var index = 0; index < fileByteArray.length; index++) {
 
