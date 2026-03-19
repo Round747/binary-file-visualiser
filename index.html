@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary file visualiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        Image
+        <select name="" id="image">
+            <option value="0">Free aspect</option>
+            <option value="1">Whole file</option>
+        </select>
+        <span id="d"></span>
+        Data
+        <select name="" id="type">
+            <option value="0">Bits</option>
+            <option value="1">Bytes (alpha)</option>
+        </select>
+        <br><br>
+        <span id="imageSize">
+            Width <input type="number" id="width" min="0" value="256">
+            <span id="d"></span>
+            Height <input type="number" id="height" min="0" value="256">
+            <span id="d"></span>
+        </span>
+        Scale <input type="number" id="scale" min="1" value="3">
+        <span id="d"></span>
+        <input type="file" id="fileSelector">
+        <span id="d"></span>
+        <span id="size"></span>
+    </div>
+    <canvas id="imageCanvas"></canvas>
+
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
