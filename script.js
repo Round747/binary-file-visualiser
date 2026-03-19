@@ -103,7 +103,7 @@ function DrawImageToCanvas() {
 
     if (typeInput.value == 0) { // bits
 
-        fileSize.innerHTML = "Showing <b>" + NumberWithCommas(Math.min((widthInput.value * heightInput.value), (fileByteArray.length * 8)) + "</b> of <b>" + (fileByteArray.length * 8)) + "</b> bits <b>(" + NumberWithCommas(((Math.min((widthInput.value * heightInput.value), (fileByteArray.length * 8)) / (fileByteArray.length * 8)) * 100).toFixed(2)) + "%)</b>";
+        fileSize.innerHTML = "Showing <b>" + NumberWithCommas(Math.min((widthInput.value * heightInput.value), (fileByteArray.length * 8)) + "</b> of <b>" + NumberWithCommas(fileByteArray.length * 8)) + "</b> bits <b>(" + ((Math.min((widthInput.value * heightInput.value), (fileByteArray.length * 8)) / (fileByteArray.length * 8)) * 100).toFixed(2) + "%)</b>";
 
         ctx.fillStyle = "black";
 
@@ -125,7 +125,7 @@ function DrawImageToCanvas() {
     }
     else if (typeInput.value == 1) { // bytes - alpha
 
-        fileSize.innerHTML = "Showing <b>" + NumberWithCommas(Math.min((widthInput.value * heightInput.value), (fileByteArray.length))) + "</b> of <b>" + (fileByteArray.length) + "</b> bytes <b>(" + NumberWithCommas(((Math.min((widthInput.value * heightInput.value), (fileByteArray.length)) / fileByteArray.length) * 100).toFixed(2)) + "%)</b>";
+        fileSize.innerHTML = "Showing <b>" + NumberWithCommas(Math.min((widthInput.value * heightInput.value), (fileByteArray.length))) + "</b> of <b>" + NumberWithCommas(fileByteArray.length) + "</b> bytes <b>(" + ((Math.min((widthInput.value * heightInput.value), (fileByteArray.length)) / fileByteArray.length) * 100).toFixed(2) + "%)</b>";
 
         for (var index = 0; index < fileByteArray.length; index++) {
 
