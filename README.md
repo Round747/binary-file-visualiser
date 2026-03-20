@@ -13,3 +13,9 @@ This project displays any file as an image visually representing its bits or byt
 
 - `Bits`: Each pixel of the image represents a single bit of the file. Black means a 1, and white means a 0.
 - `Bytes (alpha)`: Each pixel of the image represents a byte of the file. The integer value of the byte is represented as a gradient. 0 is white, and 255 is black.
+
+---
+The contents of this readme file thus far:
+
+![](https://github.com/Round747/binary-file-visualiser/blob/main/images/readme_bits.png?raw=true)
+![](https://github.com/Round747/binary-file-visualiser/blob/main/images/readme_bytes.png?raw=true)
